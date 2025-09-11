@@ -1,0 +1,20 @@
+{
+	"node": "n8n-nodes-friendgrid.screenshotbase",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Utility", "Productivity"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://screenshotbase.com/docs"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://screenshotbase.com/docs"
+			}
+		]
+	}
+}
+
+

@@ -1,0 +1,63 @@
+{
+  "name": "n8n-nodes-screenshotbase",
+  "version": "0.1.0",
+  "description": "n8n node to take screenshots from any provided website URL.",
+  "keywords": [
+    "n8n-community-node-package",
+    "screenshot",
+    "website screenshot",
+    "webpage capture",
+    "url to image",
+    "site preview",
+    "thumbnail generator",
+    "browser rendering",
+    "page snapshot",
+    "png jpeg webp",
+    "screenshotbase"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/everapihq/n8n-nodes-screenshotbase",
+  "author": {
+    "name": "Everapi",
+    "email": "office@everapi.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everapihq/n8n-nodes-screenshotbase.git"
+  },
+  "engines": {
+    "node": ">=20.15"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "npx rimraf dist && tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/ScreenshotBaseApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/ScreenshotBase/ScreenshotBase.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "~8.32.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
+    "gulp": "^5.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
