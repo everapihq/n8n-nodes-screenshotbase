@@ -2,7 +2,7 @@
 
 # n8n-nodes-friendgrid
 
-This repo contains FriendGrid community nodes for [n8n](https://n8n.io), including a ScreenshotBase node.
+This repo contains FriendGrid community nodes for [n8n](https://n8n.io), including a [ScreenshotBase](https://screenshotbase.com) node.
 
 To make your custom node available to the community, you must create it as an npm package, and [submit it to the npm registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
 
